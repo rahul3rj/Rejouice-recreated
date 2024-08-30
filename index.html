@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <title>Home | REJOUICE®️</title>
+</head>
+<body>
+    <div id="main">
+        <div id="cursor">
+            <h5>Play Reel</h5>
+        </div>
+        <div id="page1">
+            <video autoplay loop muted src="/bgvid.mp4"></video>
+            <div id="page1-content">
+                <nav>
+                    <h3>The Venture Agency...</h3>
+                    <h4>Menu</h4>
+                </nav>
+                <h1>
+                    <span>r</span><span>e</span><span>j</span><span>o</span><span>u</span><span>i</span><span>c</span><span>e</span>
+                </h1>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="p2_center">
+              <div class="elemText" id="head">
+                <h2>Tomorrow’s Brands, Today™</h2>
+                <h2>Paris / San Diego</h2>
+            </div>
+            <div id="line">
+
+            </div>
+            <div id="p2_text">
+                <div class="elemText"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are a venture firm and digital agency. Our</h1></div>
+                <div class="elemText"><h1> mission is to transform founders' visions into </h1></div>
+                <div class="elemText"><h1>remarkable brands. Choose traditional </h1></div>
+                <div class="elemText"><h1>compensation or an equity offset through our</h1></div>
+                <div class="elemText"><h1> Venture Model — your vision, your decision.</h1></div>
+            </div>  
+            </div>
+            
+        </div>
+        <div id="page3">
+            <div id="p3_top">
+                <h5>Agency & Venture <span>Models</span> ↵</h5>
+                <div class="elemText3"><h1>Explore our services</h1></div>
+                <div class="elemText3"><h1>and engagement models</h1></div>
+                
+            </div>
+            <div id="p3_bottom">
+                <div id="p3_text">
+                    <h4>Transforming visions into brands.</h4>
+                    <h4>↵ See the work</h4>
+                </div>
+                <div id="p3_card">
+                    <div class="card">
+                        <img src="https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format" alt="">
+                        <video class="hover-video" muted>
+                            <source src="/vid1.mp4" type="video/mp4">
+                        </video>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format" alt="">
+                        <video class="hover-video" muted>
+                            <source src="/vid2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format" alt="">
+                        <video class="hover-video" muted>
+                            <source src="/vid3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page4">
+            <div id="p4_center">
+              <div class="elemText4" id="head4">
+                <h2>We operate on a simple philosophy:</h2>
+                <h3>Quality over quantity.</h3>
+            </div>
+            <div id="line4">
+
+            </div>
+            <div id="p4_text">
+                <div class="elemText4"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We partner with up to 5 clients each year.</h1></div>
+                <div class="elemText4"><h1>This allows intense focus on the transformation</h1></div>
+                <div class="elemText4"><h1>and launch of your brand by our very best team,</h1></div>
+                <div class="elemText4"><h1>which is the only team we have.  We specialize in</h1></div>
+                <div class="elemText4"><h1>working with startups that are revolutionizing</h1></div>
+                <div class="elemText4"><h1>their industries.</h1></div>
+                
+            </div>  
+            </div>
+            
+        </div>
+        <div id="page5">
+            <video autoplay loop muted src="https://rejouice.com/assets/videos/RJ-BALL-BLUE-ORANGE-scaled.webm"></video>
+             <div id="extra">
+               <div id="p5_cursor">
+                <h5>Take one!</h5>
+             </div> 
+             
+             </div>
+             <div id="p5_text">
+                <h2>2 Saets </h2>
+                <h4>available for 2024</h4>
+             </div>
+            <div class="container">
+                <!-- SVG Animation -->
+                
+                <object id="animesvg" data="/svganime.svg" type="image/svg+xml"></object>
+                <svg class="abs tl:0 fit transform rotate:130 (.in-view):rotate:237deg (.in-view):tween:all,2.8s,easeOutSlow" viewBox="0 0 100 100">
+                    <!-- Invisible semicircle path for tracing -->
+                    <path id="semicircle-path" d="M 50,1 A 49,49 0 0,1 50,99" fill="none" stroke="none" />
+                    
+                    <!-- Small circle that will trace the semicircle -->
+                    <!-- <circle cx="50" cy="1" r="1" fill="#fff">
+                        <animateMotion repeatCount="1" dur="2.8s" fill="freeze" keyPoints="0;1" keyTimes="0;1" calcMode="spline">
+                            <mpath href="#semicircle-path" />
+                        </animateMotion>
+                    </circle> -->
+                </svg>
+        
+                <!-- Static Circle SVG with rotating dash effect -->
+                <svg class="abs tl:0 fit transform rotate:90deg" viewBox="0 0 100 100">
+                    <!-- Circle with stroke dash animation -->
+                    <!-- <circle cx="50" cy="50" r="49" stroke="#fff" stroke-width="0.25" fill="none" opacity="0.3">
+                        <animate attributeName="stroke-dashoffset" values="604;400" dur="2.8s" fill="freeze" />
+                    </circle> -->
+                    <circle cx="50" cy="50" r="49" stroke="#fff" stroke-width="0.15" fill="none">
+                        <animate attributeName="stroke-dashoffset" values="302;100" dur="2.8s" fill="freeze" />
+                    </circle>
+                    
+                </svg>
+            </div>
+        </div>
+        <div id="page6">
+            <div id="p6_center">
+              <div class="elemText6" id="head6">
+                <h2>Strategy & emotion.</h2>
+                <h3>You need both.</h3>
+            </div>
+            <div id="line6">
+
+            </div>
+            <div id="p4_text">
+                <div class="elemText6"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data matters, yet it’s the emotion that drives</h1></div>
+                <div class="elemText6"><h1>buying decisions. We don’t believe in ‘one size fits</h1></div>
+                <div class="elemText6"><h1>all.’ We craft unique brand experiences that</h1></div>
+                <div class="elemText6"><h1>deeply resonate with your audience and boost </h1></div>
+                <div class="elemText6"><h1>your KPIs.</h1></div>
+                
+            </div>  
+            </div>
+            
+        </div>
+        <div id="page7">
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+</body>
+</html>  
